@@ -1,19 +1,31 @@
 <html>
     <head>
         <title>Tv Store | Home</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="font-awesome/css/font-awesome.css">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/dropdown.css">
     </head>
     <body>
         <header>
             <div id="menu-bar" class="fa fa-bars"></div>
             <a href="#" class="logo">Tv Store</a>
             <nav class="navbar">
-                <a href="#home">Home</a>
-                <a href="#product">Product</a>
-                <a href="#fearured">Fearured</a>
-                <a href="#blog">blog</a>
-                <a href="#news">news</a>
+                <a href="#home" class="active1"><i class="fa-solid fa-house"></i>   Home</a>
+                <select name="kategori">
+                    <option value="Category">Category</option>
+                    <option value="sepatu-pria">Sepatu Pria</option>
+                    <option value="sepatu-wanita">Sepatu Wanita</option>
+                    <option value="olahraga-outdoor">Olahraga & Outdoor</option>
+                    <option value="jam-tangan">Jam Tangan</option>
+                    <option value="tas-pria">Tas Pria</option>
+                    <option value="tas-wanita">Tas Wanita</option>
+                    <option value="pakaian-pria">Pakaian Pria</option>
+                    <option value="aksesoris">Aksesoris</option>
+                  </select>
+
+                <a href="#fearured"><i class="fa-solid fa-address-card"></i> About</a>
+                <a href="#blog"> <i class="fa-solid fa-phone"></i> Contact Us</a>
             </nav>
             <div class="icons">
                 <a href="#"><i class="fa fa-heart"></i></a>
@@ -109,12 +121,15 @@
                         <img src="img/product4/1.jpg" alt="">
                         <h3>Nike Shoes</h3>
                         <div class="price">$200 <span>$150</span></div>
+
                         <div class="stars">
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
+                            <br>
+                            <a href="#" class="btn">add to card</a>
                         </div>
                     </div>
                 </div>
@@ -134,6 +149,8 @@
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
+                            <br>
+                            <a href="#" class="btn">add to card</a>
                         </div>
                     </div>
                 </div>

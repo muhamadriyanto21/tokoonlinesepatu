@@ -41,3 +41,22 @@ document.querySelectorAll('.featured-image-3').forEach(image_3 =>{
         document.querySelector('.big-image-3').src = src;
     });
 });
+
+// dropdown
+
+// Tambahkan kode ini jika Anda ingin menutup dropdown saat mengklik di luar dropdown
+$(document).ready(function() {
+    // Tambahkan event handler untuk menampilkan/sembunyikan dropdown
+    $('.dropdown-toggle').click(function() {
+      $(this).next('.dropdown-menu').toggleClass('show');
+    });
+
+    // Tambahkan event handler untuk menutup dropdown saat di luar elemen dropdown
+    $(document).click(function(event) {
+      var target = $(event.target);
+      if (!target.closest('.dropdown').length) {
+        $('.dropdown-menu').removeClass('show');
+      }
+    });
+  });
+

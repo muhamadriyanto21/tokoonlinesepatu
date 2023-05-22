@@ -1,0 +1,22 @@
+
+/* Gaya untuk dropdown */
+select[name="kategori"] {
+  padding: 8px;
+  font-size: 16px;
+  border: none;
+  background-color: transparent;
+  color: #000000; /* Ubah sesuai dengan warna teks pada navbar Anda */
+}
+
+select[name="kategori"] option {
+  background-color: #333333; /* Ubah sesuai dengan warna latar belakang navbar Anda */
+  color: #ffffff; /* Ubah sesuai dengan warna teks pada navbar Anda */
+}
+
+/* Gaya untuk dropdown saat diklik */
+select[name="kategori"]:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+
