@@ -311,12 +311,10 @@
             <h1 class="heading">Team <span>Weblog</span></h1>
             <div class="box-container">
                 <div class="box">
-                    <img src="img/team/1.png" alt="">
-                    <h3>Zahra Ahmadi</h3>
+                    <img src="{{ asset('img/robet.jpg') }}" alt="">
+                    <h3>Ubet Amuw</h3>
                     <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                        Eos sequi temporibus impedit corporis vero ab exercitationem
-                        dolore voluptatibus, nisi non.
+                        この靴は本当に素晴らしいです！履き心地がとても快適で、デザインもおしゃれです。長時間歩いても疲れませんし、足にフィットしているのでとても満足しています。これからもずっとこの靴を愛用したいと思います。
                     </p>
                     <div class="stars">
                         <i class="fa fa-star"></i>
@@ -327,12 +325,10 @@
                     </div>
                 </div>
                 <div class="box">
-                    <img src="img/team/2.png" alt="">
-                    <h3>Maryam Nazari</h3>
+                    <img src="{{ asset('img/topa.jpg') }}" alt="">
+                    <h3>Kang Imam</h3>
                     <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                        Eos sequi temporibus impedit corporis vero ab exercitationem
-                        dolore voluptatibus, nisi non.
+                        私はこの靴を購入してから、毎日のように履いています。その理由はシンプルです。この靴は耐久性があり、しっかりとした作りなので、長く使えます。また、足にフィットしているので、歩くときも安定感があります。本当におすすめの靴です！
                     </p>
                     <div class="stars">
                         <i class="fa fa-star"></i>
@@ -343,12 +339,10 @@
                     </div>
                 </div>
                 <div class="box">
-                    <img src="img/team/3.png" alt="">
-                    <h3>Layla Akbari</h3>
+                    <img src="{{ asset('img/jihan.jpg') }}" alt="">
+                    <h3>Jihan Ayu Maharani</h3>
                     <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                        Eos sequi temporibus impedit corporis vero ab exercitationem
-                        dolore voluptatibus, nisi non.
+                        私は運動をするのが好きで、この靴は私の最高のパートナーです。軽量で足を疲れさせず、グリップ力も抜群です。また、通気性も良く、汗をかいても快適に履くことができます。本当に優れた靴で、これからもスポーツのお供として欠かせません。
                     </p>
                     <div class="stars">
                         <i class="fa fa-star"></i>
