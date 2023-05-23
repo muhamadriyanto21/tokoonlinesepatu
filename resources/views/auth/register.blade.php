@@ -18,7 +18,7 @@
                       <div class="row justify-content-center">
                         <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
 
-                          <p class="text-center h1 fw-bold mb-4 mx-1 mx-md-3 mt-4">Sign up</p>
+                          <p class="text-center h1 fw-bold mb-4 mx-1 mx-md-3 mt-4">Register</p>
 
                           <form class="mx-1 mx-md-4" method="POST" action="{{ route('register') }}">
                             @csrf
@@ -77,6 +77,12 @@
                             </div>
 
                           </form>
+
+                          <div>
+                            <p class="mb-0">Already have an account? <a href="{{ route('login') }}" class="text-black-50 fw-bold">Login</a>
+                            </p>
+                          </div>
+
 
                         </div>
                         <div class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2">

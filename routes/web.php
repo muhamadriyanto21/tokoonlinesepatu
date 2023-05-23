@@ -32,4 +32,14 @@ Route::prefix('admin')->middleware('auth')->group(function () {
 });
 
 Route::get('/home', [HomeController::class, 'index'])->name('home')->middleware('auth');
+Route::get('/keranjang', function () {
+    // Logika untuk halaman keranjang
+    return view('keranjang');
+})->name('keranjang');
+Route::get('/admin/mystore', function () {
+    return view('admin.mystore');
+})->name('admin.mystore');
+
+
+
 

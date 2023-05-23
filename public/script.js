@@ -1,3 +1,5 @@
+// ini adalah js untuk dashboard
+
 const allSideMenu = document.querySelectorAll('#sidebar .side-menu.top li a');
 
 allSideMenu.forEach(item=> {

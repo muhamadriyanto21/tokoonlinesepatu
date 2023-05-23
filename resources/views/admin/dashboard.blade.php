@@ -18,7 +18,7 @@
 	<section id="sidebar">
 		<a href="#" class="brand">
 			<i class='bx bxs-smile'></i>
-			<span class="text">AdminHub</span>
+			<span class="text">Tv Store</span>
 		</a>
 		<ul class="side-menu top">
 			<li class="active">
@@ -28,7 +28,7 @@
 				</a>
 			</li>
 			<li>
-				<a href="#">
+				<a href="{{ route('admin.mystore') }}">
 					<i class='bx bxs-shopping-bag-alt' ></i>
 					<span class="text">My Store</span>
 				</a>
@@ -60,7 +60,7 @@
 				</a>
 			</li>
 			<li>
-				<a href="#" class="logout">
+				<a href="{{ route('login') }}" class="logout">
 					<i class='bx bxs-log-out-circle' ></i>
 					<span class="text">Logout</span>
 				</a>

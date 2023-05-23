@@ -29,8 +29,8 @@
             </nav>
             <div class="icons">
                 <a href="#"><i class="fa fa-heart"></i></a>
-                <a href="#"><i class="fa fa-shopping-cart"></i></a>
-                <a href="{{ route('register') }}"><i class="fa fa-user"></i></a>
+                <a href="{{ route('keranjang') }}"><i class="fa fa-shopping-cart" title="keranjang belanja"></i></a>
+                <a href="{{ route('login') }}"><i class="fa fa-user" title="Login"></i></a>
             </div>
         </header>
         <!--end header-->
@@ -129,7 +129,7 @@
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
                             <br>
-                            <a href="#" class="btn">add to card</a>
+
                         </div>
                     </div>
                 </div>
@@ -150,7 +150,7 @@
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
                             <br>
-                            <a href="#" class="btn">add to card</a>
+
                         </div>
                     </div>
                 </div>
