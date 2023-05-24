@@ -21,34 +21,28 @@
 			<span class="text">Tv Store</span>
 		</a>
 		<ul class="side-menu top">
-			<li class="active">
-				<a href="#">
+			<li>
+				<a href="{{ route('admin.daftarproduk') }}">
 					<i class='bx bxs-dashboard' ></i>
-					<span class="text">Dashboard</span>
+					<span class="text">Daftar Produk</span>
 				</a>
 			</li>
-			<li>
-				<a href="{{ route('admin.mystore') }}">
+			<li class="active">
+				<a href="{{ route('admin.statistik') }}">
 					<i class='bx bxs-shopping-bag-alt' ></i>
-					<span class="text">My Store</span>
+					<span class="text">Statistik Penjualan</span>
 				</a>
 			</li>
 			<li>
 				<a href="#">
 					<i class='bx bxs-doughnut-chart' ></i>
-					<span class="text">Analytics</span>
+					<span class="text">Pesanan</span>
 				</a>
 			</li>
 			<li>
 				<a href="#">
 					<i class='bx bxs-message-dots' ></i>
-					<span class="text">Message</span>
-				</a>
-			</li>
-			<li>
-				<a href="#">
-					<i class='bx bxs-group' ></i>
-					<span class="text">Team</span>
+					<span class="text">Laporan</span>
 				</a>
 			</li>
 		</ul>
@@ -56,7 +50,7 @@
 			<li>
 				<a href="#">
 					<i class='bx bxs-cog' ></i>
-					<span class="text">Settings</span>
+					<span class="text">Pengaturan</span>
 				</a>
 			</li>
 			<li>
@@ -102,7 +96,7 @@
 					<h1>Dashboard</h1>
 					<ul class="breadcrumb">
 						<li>
-							<a href="#">Dashboard</a>
+							<a href="#">Statistik Penjualan</a>
 						</li>
 						<li><i class='bx bx-chevron-right' ></i></li>
 						<li>
@@ -116,7 +110,7 @@
 				</a>
 			</div>
 
-			<ul class="box-info">
+			{{-- <ul class="box-info">
 				<li>
 					<i class='bx bxs-calendar-check' ></i>
 					<span class="text">
@@ -138,10 +132,10 @@
 						<p>Total Sales</p>
 					</span>
 				</li>
-			</ul>
+			</ul> --}}
 
 
-			<div class="table-data">
+			{{-- <div class="table-data">
 				<div class="order">
 					<div class="head">
 						<h3>Recent Orders</h3>
@@ -229,7 +223,7 @@
 						</li>
 					</ul>
 				</div>
-			</div>
+			</div> --}}
 		</main>
 		<!-- MAIN -->
 	</section>

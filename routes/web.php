@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\HomeController;
-use App\Http\Controllers\Admin\DashboardController;
+use App\Http\Controllers\Admin\DaftarProdukController;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,7 +27,7 @@ Route::post('/register', [RegisterController::class, 'register']);
 Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
 Route::post('/login', [LoginController::class, 'login']);
 Route::prefix('admin')->middleware('auth')->group(function () {
-    Route::get('/dashboard', [DashboardController::class, 'index'])->name('admin.dashboard');
+    Route::get('/daftarproduk', [DaftarProdukController::class, 'index'])->name('admin.daftarproduk');
     // ...
 });
 
@@ -36,9 +36,18 @@ Route::get('/keranjang', function () {
     // Logika untuk halaman keranjang
     return view('keranjang');
 })->name('keranjang');
-Route::get('/admin/mystore', function () {
-    return view('admin.mystore');
-})->name('admin.mystore');
+Route::get('/admin/daftarproduk', function () {
+    return view('admin.daftarproduk');
+})->name('admin.daftarproduk');
+Route::get('/admin/statistik', function () {
+    return view('admin.statistik');
+})->name('admin.statistik');
+Route::get('/admin/laporan', function () {
+    return view('admin.laporan');
+})->name('admin.laporan');
+Route::get('/admin/pesanan', function () {
+    return view('admin.pesanan');
+})->name('admin.pesanan');
 
 
 
