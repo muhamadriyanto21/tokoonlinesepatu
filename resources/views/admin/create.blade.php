@@ -9,7 +9,7 @@
 	<!-- My CSS -->
 	<link rel="stylesheet" href="{{ asset('style.css') }}">
 
-	<title>Admin | Tv Store</title>
+	<title>Create | Tv Store</title>
 </head>
 <body>
 
@@ -28,9 +28,9 @@
 				</a>
 			</li>
 			<li class="active">
-				<a href="{{ route('admin.statistik') }}">
+				<a href="{{ route('admin.create') }}">
 					<i class='bx bxs-shopping-bag-alt' ></i>
-					<span class="text">Statistik Penjualan</span>
+					<span class="text">Add Penjualan</span>
 				</a>
 			</li>
 			<li>
@@ -48,7 +48,7 @@
 		</ul>
 		<ul class="side-menu">
 			<li>
-				<a href="#">
+				<a href="{{ route('admin.pengaturan') }}">
 					<i class='bx bxs-cog' ></i>
 					<span class="text">Pengaturan</span>
 				</a>
@@ -96,7 +96,7 @@
 					<h1>Dashboard</h1>
 					<ul class="breadcrumb">
 						<li>
-							<a href="#">Statistik Penjualan</a>
+							<a href="#">Create Penjualan</a>
 						</li>
 						<li><i class='bx bx-chevron-right' ></i></li>
 						<li>

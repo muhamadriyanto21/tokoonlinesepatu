@@ -48,7 +48,7 @@
 		</ul>
 		<ul class="side-menu">
 			<li>
-				<a href="#">
+				<a href="{{ route('admin.pengaturan') }}">
 					<i class='bx bxs-cog' ></i>
 					<span class="text">Pengaturan</span>
 				</a>

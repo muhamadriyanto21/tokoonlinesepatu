@@ -5,14 +5,16 @@
         <link rel="stylesheet" href="font-awesome/css/font-awesome.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/dropdown.css">
+
+
     </head>
     <body>
         <header>
             <div id="menu-bar" class="fa fa-bars"></div>
             <a href="#" class="logo">Tv Store</a>
             <nav class="navbar">
-                <a href="#home" class="active1"><i class="fa-solid fa-house"></i>   Home</a>
-                <select name="kategori">
+                <a href="#home" class="active1" title="Home"><i class="fa-solid fa-house"></i>   Home</a>
+                <select name="kategori" title="Category Produk">
                     <option value="Category">Category</option>
                     <option value="sepatu-pria">Sepatu Pria</option>
                     <option value="sepatu-wanita">Sepatu Wanita</option>
@@ -24,11 +26,10 @@
                     <option value="aksesoris">Aksesoris</option>
                   </select>
 
-                <a href="#fearured"><i class="fa-solid fa-address-card"></i> About</a>
-                <a href="#blog"> <i class="fa-solid fa-phone"></i> Contact Us</a>
+                <a href="{{ route('aboutus') }}" title="About Us"><i class="fa-solid fa-address-card"></i> About Us</a>
+                <a href="{{ route('contactus') }}" title="Contact Us"> <i class="fa-solid fa-phone"></i> Contact Us</a>
             </nav>
             <div class="icons">
-                <a href="#"><i class="fa fa-heart"></i></a>
                 <a href="{{ route('keranjang') }}"><i class="fa fa-shopping-cart" title="keranjang belanja"></i></a>
                 <a href="{{ route('login') }}"><i class="fa fa-user" title="Login"></i></a>
             </div>
@@ -44,7 +45,7 @@
                             Lorem ipsum, dolor sit amet consectetur adipisicing elit
 
                         </p>
-                        <a href="#" class="btn">add to card</a>
+                        <a href="#" id="addCardBtn" class="btn">add to card</a>
                     </div>
                     <br>
                     <div class="image">
@@ -234,7 +235,7 @@
         </section>
         <!--end product-->
         <section class="featured" id="fearured">
-            <h1 class="heading">New <span>Product</span></h1>
+
             <div class="row">
                 <div class="image-container">
                     <div class="small-image">
@@ -264,74 +265,17 @@
                     <a href="#" class="btn">add to cart</a>
                 </div>
             </div>
-            <div class="row">
-                <div class="image-container">
-                    <div class="small-image">
-                        <img src="img/product2/1.jpg" alt="" class="featured-image-2">
-                        <img src="img/product2/2.jpg" alt="" class="featured-image-2">
-                        <img src="img/product2/3.jpg" alt="" class="featured-image-2">
-                        <img src="img/product2/4.jpg" alt="" class="featured-image-2">
-                    </div>
-                    <div class="big-image">
-                        <img src="img/product2/1.jpg" alt="" class="big-image-2">
-                    </div>
-                </div>
-                <div class="content">
-                    <h3>new nike airmac shoes</h3>
-                    <div class="stars">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                    </div>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Fugit officiis omnis quo laboriosam velit culpa ex illo, error enim nostrum?
-                    </p>
-                    <div class="price">$90 <span>$120</span></div>
-                    <a href="#" class="btn">add to cart</a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="image-container">
-                    <div class="small-image">
-                        <img src="img/product3/1.jpg" alt="" class="featured-image-3">
-                        <img src="img/product3/2.jpg" alt="" class="featured-image-3">
-                        <img src="img/product3/3.jpg" alt="" class="featured-image-3">
-                        <img src="img/product3/4.jpg" alt="" class="featured-image-3">
-                    </div>
-                    <div class="big-image">
-                        <img src="img/product3/1.jpg" alt="" class="big-image-3">
-                    </div>
-                </div>
-                <div class="content">
-                    <h3>new nike airmac shoes</h3>
-                    <div class="stars">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                    </div>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Fugit officiis omnis quo laboriosam velit culpa ex illo, error enim nostrum?
-                    </p>
-                    <div class="price">$90 <span>$120</span></div>
-                    <a href="#" class="btn">add to cart</a>
-                </div>
-            </div>
+
         </section>
         <!--end featured-->
-        <section class="blog" id="blog">
-            <h1 class="heading">Team <span>Weblog</span></h1>
+        {{-- <section class="blog" id="blog">
+            <h1 class="heading">Testimoni <span>Customer</span></h1>
             <div class="box-container">
                 <div class="box">
                     <img src="{{ asset('img/robet.jpg') }}" alt="">
                     <h3>Ubet Amuw</h3>
                     <p>
-                        この靴は本当に素晴らしいです！履き心地がとても快適で、デザインもおしゃれです。長時間歩いても疲れませんし、足にフィットしているのでとても満足しています。これからもずっとこの靴を愛用したいと思います。
+                        Saya sangat senang dengan pembelian sepatu di toko online ini! Sepatu yang saya dapatkan berkualitas tinggi, nyaman dipakai, dan desainnya sangat modis. Proses pemesanan dan pengiriman juga sangat cepat dan efisien. Saya pasti akan merekomendasikan toko online ini kepada teman-teman saya. Terima kasih atas pengalaman berbelanja yang menyenangkan!.
                     </p>
                     <div class="stars">
                         <i class="fa fa-star"></i>
@@ -345,7 +289,7 @@
                     <img src="{{ asset('img/topa.jpg') }}" alt="">
                     <h3>Kang Imam</h3>
                     <p>
-                        私はこの靴を購入してから、毎日のように履いています。その理由はシンプルです。この靴は耐久性があり、しっかりとした作りなので、長く使えます。また、足にフィットしているので、歩くときも安定感があります。本当におすすめの靴です！
+                        Saya sangat senang dengan pembelian sepatu di toko online ini! Sepatu yang saya dapatkan berkualitas tinggi, nyaman dipakai, dan desainnya sangat modis. Proses pemesanan dan pengiriman juga sangat cepat dan efisien. Saya pasti akan merekomendasikan toko online ini kepada teman-teman saya. Terima kasih atas pengalaman berbelanja yang menyenangkan!" - [Nama Pelanggan 1]
                     </p>
                     <div class="stars">
                         <i class="fa fa-star"></i>
@@ -356,10 +300,10 @@
                     </div>
                 </div>
                 <div class="box">
-                    <img src="{{ asset('img/jihan.jpg') }}" alt="">
-                    <h3>Jihan Ayu Maharani</h3>
+                    <img src="{{ asset('img/riyan.jpeg') }}" alt="">
+                    <h3>Riyan</h3>
                     <p>
-                        私は運動をするのが好きで、この靴は私の最高のパートナーです。軽量で足を疲れさせず、グリップ力も抜群です。また、通気性も良く、汗をかいても快適に履くことができます。本当に優れた靴で、これからもスポーツのお供として欠かせません。
+                        Saya sangat senang dengan pembelian sepatu di toko online ini! Sepatu yang saya dapatkan berkualitas tinggi, nyaman dipakai, dan desainnya sangat modis. Proses pemesanan dan pengiriman juga sangat cepat dan efisien. Saya pasti akan merekomendasikan toko online ini kepada teman-teman saya. Terima kasih atas pengalaman berbelanja yang menyenangkan!" - [Nama Pelanggan 1]
                     </p>
                     <div class="stars">
                         <i class="fa fa-star"></i>
@@ -370,27 +314,26 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> --}}
         <!--end blog-->
-        <section class="news" id="news">
-            <div class="content">
-                <h3>monthly news letter</h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Fuga sed itaque ducimus maxime facere nihil expedita non sunt? Nostrum, voluptatem?
-                </p>
-                <form action="">
-                    <input type="email" placeholder="please enter your email" class="email">
-                    <input type="submit" value="save" class="btn">
-                </form>
-            </div>
-        </section>
+
         <!--end news-->
-        <section class="cridet" id="cridet">
-            <div class="box">
-                <h3>all reserved by codeskill</h3>
+
+
+        {{-- footer --}}
+        <footer>
+            <div class="container">
+              <div class="footer-content">
+                <p>&copy; 2023 Your Store. All rights reserved.</p>
+                <ul class="footer-links">
+                  <li><a href="#">Terms of Service</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+                  <li><a href="#">Cookie Policy</a></li>
+                </ul>
+              </div>
             </div>
-        </section>
+          </footer>
+
     </body>
 </html>
 

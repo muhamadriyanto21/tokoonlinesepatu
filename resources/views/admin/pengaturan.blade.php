@@ -3,21 +3,13 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width. initial-scale=1.0">
-    <title>Pengaturan | Tv Store</title>
 
 	<!-- Boxicons -->
 	<link rel="stylesheet" href="{{ asset('boxicons.min.css') }}" >
 	<!-- My CSS -->
 	<link rel="stylesheet" href="{{ asset('style.css') }}">
-    {{-- bootstrap --}}
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Product List</title>
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-
-
-
+	<title>Pengaturan | Tv Store</title>
 </head>
 <body>
 
@@ -29,7 +21,7 @@
 			<span class="text">Tv Store</span>
 		</a>
 		<ul class="side-menu top">
-			<li class="active">
+			<li>
 				<a href="{{ route('admin.daftarproduk') }}">
 					<i class='bx bxs-dashboard' ></i>
 					<span class="text">Daftar Produk</span>
@@ -55,8 +47,8 @@
 			</li>
 		</ul>
 		<ul class="side-menu">
-			<li>
-				<a href="{{ route('admin.pengaturan') }}">
+			<li class="active">
+				<a href="#">
 					<i class='bx bxs-cog' ></i>
 					<span class="text">Pengaturan</span>
 				</a>
@@ -104,7 +96,7 @@
 					<h1>Dashboard</h1>
 					<ul class="breadcrumb">
 						<li>
-							<a href="#">Daftar Produk</a>
+							<a href="#">Pengaturan</a>
 						</li>
 						<li><i class='bx bx-chevron-right' ></i></li>
 						<li>
@@ -118,33 +110,11 @@
 				</a>
 			</div>
 
-			{{-- <ul class="box-info">
-				<li>
-					<i class='bx bxs-calendar-check' ></i>
-					<span class="text">
-						<h3>5000 pcs</h3>
-						<p>New Order</p>
-					</span>
-				</li>
-				<li>
-					<i class='bx bxs-group' ></i>
-					<span class="text">
-						<h3>10000</h3>
-						<p>Visitors</p>
-					</span>
-				</li>
-				<li>
-					<i class='bx bxs-dollar-circle' ></i>
-					<span class="text">
-						<h3>100 Juta</h3>
-						<p>Total Pendapatan</p>
-					</span>
-				</li>
-			</ul> --}}
 
 
 
-        </main>
+
+		</main>
 
 		<!-- MAIN -->
 	</section>

@@ -142,7 +142,7 @@ background-color: #4285f4;
 
                       <h3 class="mb-5 pt-2 text-center fw-bold text-uppercase">Your products</h3>
 
-                      <div class="d-flex align-items-center mb-5">
+                      {{-- <div class="d-flex align-items-center mb-5">
                         <div class="flex-shrink-0">
                           <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/13.webp"
                             class="img-fluid" style="width: 150px;" alt="Generic placeholder image">
@@ -163,19 +163,19 @@ background-color: #4285f4;
                             </div>
                           </div>
                         </div>
-                      </div>
+                      </div> --}}
 
                       <div class="d-flex align-items-center mb-5">
                         <div class="flex-shrink-0">
-                          <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/6.webp"
+                          <img src="{{ asset('img/product1/1.jpg') }}"
                             class="img-fluid" style="width: 150px;" alt="Generic placeholder image">
                         </div>
                         <div class="flex-grow-1 ms-3">
                           <a href="#!" class="float-end text-black"><i class="fas fa-times"></i></a>
-                          <h5 class="text-primary">Headphones Bose 35 II</h5>
+                          <h5 class="text-primary">Seakers</h5>
                           <h6 style="color: #9e9e9e;">Color: Red</h6>
                           <div class="d-flex align-items-center">
-                            <p class="fw-bold mb-0 me-5 pe-3">239$</p>
+                            <p class="fw-bold mb-0 me-5 pe-3">Rp. 2.000.000</p>
                             <div class="def-number-input number-input safari_only">
                               <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
                                 class="minus"></button>
@@ -188,7 +188,7 @@ background-color: #4285f4;
                         </div>
                       </div>
 
-                      <div class="d-flex align-items-center mb-5">
+                      {{-- <div class="d-flex align-items-center mb-5">
                         <div class="flex-shrink-0">
                           <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/1.webp"
                             class="img-fluid" style="width: 150px;" alt="Generic placeholder image">
@@ -209,14 +209,14 @@ background-color: #4285f4;
                             </div>
                           </div>
                         </div>
-                      </div>
+                      </div> --}}
 
                       <hr class="mb-4" style="height: 2px; background-color: #1266f1; opacity: 1;">
 
-                      <div class="d-flex justify-content-between px-x">
+                      {{-- <div class="d-flex justify-content-between px-x">
                         <p class="fw-bold">Discount:</p>
                         <p class="fw-bold">95$</p>
-                      </div>
+                      </div> --}}
                       <div class="d-flex justify-content-between p-2 mb-2" style="background-color: #e1f5fe;">
                         <h5 class="fw-bold mb-0">Total:</h5>
                         <h5 class="fw-bold mb-0">2261$</h5>
