@@ -267,58 +267,9 @@
             </div>
 
         </section>
-        <!--end featured-->
-        {{-- <section class="blog" id="blog">
-            <h1 class="heading">Testimoni <span>Customer</span></h1>
-            <div class="box-container">
-                <div class="box">
-                    <img src="{{ asset('img/robet.jpg') }}" alt="">
-                    <h3>Ubet Amuw</h3>
-                    <p>
-                        Saya sangat senang dengan pembelian sepatu di toko online ini! Sepatu yang saya dapatkan berkualitas tinggi, nyaman dipakai, dan desainnya sangat modis. Proses pemesanan dan pengiriman juga sangat cepat dan efisien. Saya pasti akan merekomendasikan toko online ini kepada teman-teman saya. Terima kasih atas pengalaman berbelanja yang menyenangkan!.
-                    </p>
-                    <div class="stars">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa fa-star"></i>
-                    </div>
-                </div>
-                <div class="box">
-                    <img src="{{ asset('img/topa.jpg') }}" alt="">
-                    <h3>Kang Imam</h3>
-                    <p>
-                        Saya sangat senang dengan pembelian sepatu di toko online ini! Sepatu yang saya dapatkan berkualitas tinggi, nyaman dipakai, dan desainnya sangat modis. Proses pemesanan dan pengiriman juga sangat cepat dan efisien. Saya pasti akan merekomendasikan toko online ini kepada teman-teman saya. Terima kasih atas pengalaman berbelanja yang menyenangkan!" - [Nama Pelanggan 1]
-                    </p>
-                    <div class="stars">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa fa-star-half-o"></i>
-                    </div>
-                </div>
-                <div class="box">
-                    <img src="{{ asset('img/riyan.jpeg') }}" alt="">
-                    <h3>Riyan</h3>
-                    <p>
-                        Saya sangat senang dengan pembelian sepatu di toko online ini! Sepatu yang saya dapatkan berkualitas tinggi, nyaman dipakai, dan desainnya sangat modis. Proses pemesanan dan pengiriman juga sangat cepat dan efisien. Saya pasti akan merekomendasikan toko online ini kepada teman-teman saya. Terima kasih atas pengalaman berbelanja yang menyenangkan!" - [Nama Pelanggan 1]
-                    </p>
-                    <div class="stars">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-o"></i>
-                        <i class="fa fa fa-star-half-o"></i>
-                    </div>
-                </div>
-            </div>
-        </section> --}}
-        <!--end blog-->
+        {{-- data --}}
 
-        <!--end news-->
-
+        {{-- end data   --}}
 
         {{-- footer --}}
         <footer>
@@ -332,7 +283,7 @@
                 </ul>
               </div>
             </div>
-          </footer>
+        </footer>
 
     </body>
 </html>

@@ -481,63 +481,64 @@ section{
     }
 }
 
+
 /* footer untuk home.blade.php */
 footer {
     background-color: #333;
     padding: 20px 0;
     color: #fff;
+    text-align: center;
   }
-  
+
   .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
   }
-  
+
   .footer-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
   }
-  
+
   .footer-links {
     list-style: none;
     padding: 0;
     margin: 0;
   }
-  
+
   .footer-links li {
     display: inline-block;
     margin-left: 10px;
   }
-  
+
   .footer-links li:first-child {
     margin-left: 0;
   }
-  
+
   .footer-links li a {
     color: #fff;
     text-decoration: none;
   }
-  
+
   @media (max-width: 767px) {
     .footer-content {
       flex-direction: column;
       align-items: flex-start;
     }
-  
+
     .footer-links {
       margin-top: 10px;
     }
-  
+
     .footer-links li {
       margin-left: 0;
       margin-right: 10px;
     }
-  
+
     .footer-links li:last-child {
       margin-right: 0;
     }
   }
-  

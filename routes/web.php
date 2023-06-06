@@ -18,9 +18,10 @@ use App\Http\Controllers\ProductController;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
+// Route::get('/', function () {
+//     return view('home');
+// });
+Route::get('/', [HomeController::class, 'index'])->name('index');
 // routes/web.php
 
 Route::get('/register', [RegisterController::class, 'showRegistrationForm'])->name('register');
