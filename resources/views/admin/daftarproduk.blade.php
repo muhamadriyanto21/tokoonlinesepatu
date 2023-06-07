@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+{{-- <!DOCTYPE html>
  <html lang="en" title="Coding design">
 
  <head>
@@ -60,4 +60,4 @@
      </main>
  </body>
 
- </html>
+ </html> --}}

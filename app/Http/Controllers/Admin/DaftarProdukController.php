@@ -9,6 +9,6 @@ class DaftarProdukController extends Controller
 {
     public function index()
     {
-        return view('admin.daftarproduk');
+        return view('admin.crud');
     }
 }

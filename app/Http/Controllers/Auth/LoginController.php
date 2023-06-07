@@ -20,7 +20,7 @@ class LoginController extends Controller
     protected function authenticated(Request $request, $user)
     {
         if ($user->email === 'admin@gmail.com') {
-            return redirect()->route('admin.daftarproduk');
+            return redirect()->route('admin.crud');
         }
 
         return redirect('/home');
@@ -37,7 +37,7 @@ class LoginController extends Controller
 
     if (Auth::guard('web')->attempt($credentials)) {
         if (Auth::user()->isAdmin()) {
-            return redirect()->route('admin.daftarproduk');
+            return redirect()->route('admin.crud');
         } else {
             return redirect()->intended('/');
         }

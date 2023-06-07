@@ -30,7 +30,7 @@ Route::post('/register', [RegisterController::class, 'register']);
 Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
 Route::post('/login', [LoginController::class, 'login']);
 Route::prefix('admin')->middleware('auth')->group(function () {
-    Route::get('/daftarproduk', [DaftarProdukController::class, 'index'])->name('admin.daftarproduk');
+    Route::get('/crud', [DaftarProdukController::class, 'index'])->name('admin.crud');
     // ...
 });
 
@@ -39,21 +39,22 @@ Route::get('/keranjang', function () {
     // Logika untuk halaman keranjang
     return view('keranjang');
 })->name('keranjang');
-Route::get('/admin/daftarproduk', function () {
-    return view('admin.daftarproduk');
-})->name('admin.daftarproduk');
-Route::get('/admin/create', function () {
-    return view('admin.create');
-})->name('admin.create');
-Route::get('/admin/laporan', function () {
-    return view('admin.laporan');
-})->name('admin.laporan');
-Route::get('/admin/pesanan', function () {
-    return view('admin.pesanan');
-})->name('admin.pesanan');
-Route::get('/admin/pengaturan', function () {
-    return view('admin.pengaturan');
-})->name('admin.pengaturan');
+Route::get('/crud', [HomeController::class, 'crud'])->name('crud');
+// Route::get('/admin/daftarproduk', function () {
+//     return view('admin.daftarproduk');
+// })->name('admin.daftarproduk');
+// Route::get('/admin/create', function () {
+//     return view('admin.create');
+// })->name('admin.create');
+// Route::get('/admin/laporan', function () {
+//     return view('admin.laporan');
+// })->name('admin.laporan');
+// Route::get('/admin/pesanan', function () {
+//     return view('admin.pesanan');
+// })->name('admin.pesanan');
+// Route::get('/admin/pengaturan', function () {
+//     return view('admin.pengaturan');
+// })->name('admin.pengaturan');
 Route::resource('products', ProductController::class);
 
 // Menampilkan daftar produk

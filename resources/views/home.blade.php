@@ -16,9 +16,9 @@
                 <a href="#home" class="active1" title="Home"><i class="fa-solid fa-house"></i>   Home</a>
                 <select name="kategori" title="Category Produk">
                     <option value="Category">Category</option>
-                    @foreach ($categorys as $category)
+                    {{-- @foreach ($categorys as $category)
                         <option value="{{ $category->category_id }}">{{ $category->category_name }}</option>
-                    @endforeach
+                    @endforeach --}}
                   </select>
                 <a href="{{ route('aboutus') }}" title="About Us"><i class="fa-solid fa-address-card"></i> About Us</a>
                 <a href="{{ route('contactus') }}" title="Contact Us"> <i class="fa-solid fa-phone"></i> Contact Us</a>
@@ -106,7 +106,7 @@
         <section class="product" id="product">
             <h1 class="heading">latest <span>Products</span></h1>
             <div class="box-container">
-                @foreach ($products as $product)
+                {{-- @foreach ($products as $product) --}}
                 <div class="box">
                     <div class="icons">
                         <a href="#" class="fa fa-heart"></a>
@@ -114,10 +114,12 @@
                         <a href="#" class="fa fa-eye"></a>
                     </div>
                     <div class="content">
-                        <img src="{{ asset('storage/images/' . $product->svimage->image) }}" alt="Product Image">
-
-                        <h3>{{ $product->name_product }}</h3>
-                        <div class="price">Rp {{ $product->price }}</div>
+                        {{-- <img src="{{ asset('storage/images/' . $product->svimage->image) }}" alt="Product Image"> --}}
+                        <img src="#" alt="Product Image">
+                        {{-- <h3>{{ $product->name_product }}</h3> --}}
+                        <h3>Test</h3>
+                        {{-- <div class="price">Rp {{ $product->price }}</div> --}}
+                        <div class="price">Rp 100.000</div>
                         <div class="stars">
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
@@ -129,7 +131,7 @@
                         </div>
                     </div>
                 </div>
-                @endforeach
+                {{-- @endforeach --}}
             </div>
         </section>
         <!--end product-->
@@ -138,13 +140,13 @@
             <div class="row">
                 <div class="image-container">
                     <div class="small-image">
-                        @foreach ($bottom_product->svmany as $bottomp)
+                        {{-- @foreach ($bottom_product->svmany as $bottomp)
                             <img src="{{ asset('storage/images/' . $bottomp->image) }}" alt="">
-                        @endforeach
-                        {{-- <img src="img/product1/1.jpg" alt="" class="featured-image-1">
+                        @endforeach --}}
+                        <img src="img/product1/1.jpg" alt="" class="featured-image-1">
                         <img src="img/product1/2.jpg" alt="" class="featured-image-1">
                         <img src="img/product1/3.jpg" alt="" class="featured-image-1">
-                        <img src="img/product1/4.jpg" alt="" class="featured-image-1"> --}}
+                        <img src="img/product1/4.jpg" alt="" class="featured-image-1">
                     </div>
                     <div class="big-image">
                         <img src="img/product1/1.jpg" alt="" class="big-image-1">

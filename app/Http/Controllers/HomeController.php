@@ -24,4 +24,8 @@ class HomeController extends Controller
     {
         return view('contactus');
     }
+
+    public function crud() {
+        return view('admin.crud');
+    }
 }
