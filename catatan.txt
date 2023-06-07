@@ -1,0 +1,13 @@
+Ketikkan perintah : php artisan storage:link
+Landing page :
+    1. selected gambar pada fitur landing page belum selesai(lihat bagian paling bawah)
+    2. fitur menampilkan product paling atas belum selesai(lihat bagian paling atas)
+    3. fitur kategori sudah ditampilkan menggunakan database, tetapi fitur selected belum bisa
+    4. fitur detail belum bisa pada latest product
+
+
+/Fitur yang diselesaikan/
+    1. menampilkan data pada latest product(landing page)
+    2. menampilkan data dan banyak gambar pada bottom product(landing page)
+    3. menampilkan category(landing page)
+    

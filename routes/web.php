@@ -6,6 +6,7 @@ use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\Admin\DaftarProdukController;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\TestController;
 
 /*
 |--------------------------------------------------------------------------
@@ -78,3 +79,7 @@ Route::delete('/products/{product}', 'ProductController@destroy')->name('product
 
 Route::get('/aboutus', [HomeController::class, 'aboutus'])->name('aboutus');
 Route::get('/contactus', [HomeController::class, 'contactus'])->name('contactus');
+Route::post('/upload/image', [TestController::class, 'testgambar']);
+Route::get('/test', function () {
+    return view('test');
+})->name('admin.pengaturan');

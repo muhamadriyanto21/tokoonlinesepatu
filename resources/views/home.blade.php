@@ -16,16 +16,10 @@
                 <a href="#home" class="active1" title="Home"><i class="fa-solid fa-house"></i>   Home</a>
                 <select name="kategori" title="Category Produk">
                     <option value="Category">Category</option>
-                    <option value="sepatu-pria">Sepatu Pria</option>
-                    <option value="sepatu-wanita">Sepatu Wanita</option>
-                    <option value="olahraga-outdoor">Olahraga & Outdoor</option>
-                    <option value="jam-tangan">Jam Tangan</option>
-                    <option value="tas-pria">Tas Pria</option>
-                    <option value="tas-wanita">Tas Wanita</option>
-                    <option value="pakaian-pria">Pakaian Pria</option>
-                    <option value="aksesoris">Aksesoris</option>
+                    @foreach ($categorys as $category)
+                        <option value="{{ $category->category_id }}">{{ $category->category_name }}</option>
+                    @endforeach
                   </select>
-
                 <a href="{{ route('aboutus') }}" title="About Us"><i class="fa-solid fa-address-card"></i> About Us</a>
                 <a href="{{ route('contactus') }}" title="Contact Us"> <i class="fa-solid fa-phone"></i> Contact Us</a>
             </nav>
@@ -112,6 +106,7 @@
         <section class="product" id="product">
             <h1 class="heading">latest <span>Products</span></h1>
             <div class="box-container">
+                @foreach ($products as $product)
                 <div class="box">
                     <div class="icons">
                         <a href="#" class="fa fa-heart"></a>
@@ -119,10 +114,10 @@
                         <a href="#" class="fa fa-eye"></a>
                     </div>
                     <div class="content">
-                        <img src="img/product4/1.jpg" alt="">
-                        <h3>Nike Shoes</h3>
-                        <div class="price">$200 <span>$150</span></div>
+                        <img src="{{ asset('storage/images/' . $product->svimage->image) }}" alt="Product Image">
 
+                        <h3>{{ $product->name_product }}</h3>
+                        <div class="price">Rp {{ $product->price }}</div>
                         <div class="stars">
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
@@ -134,103 +129,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="box">
-                    <div class="icons">
-                        <a href="#" class="fa fa-heart"></a>
-                        <a href="#" class="fa fa-share"></a>
-                        <a href="#" class="fa fa-eye"></a>
-                    </div>
-                    <div class="content">
-                        <img src="img/product4/2.jpg" alt="">
-                        <h3>Nike Shoes</h3>
-                        <div class="price">$200 <span>$150</span></div>
-                        <div class="stars">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <br>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="icons">
-                        <a href="#" class="fa fa-heart"></a>
-                        <a href="#" class="fa fa-share"></a>
-                        <a href="#" class="fa fa-eye"></a>
-                    </div>
-                    <div class="content">
-                        <img src="img/product4/3.jpg" alt="">
-                        <h3>Nike Shoes</h3>
-                        <div class="price">$200 <span>$150</span></div>
-                        <div class="stars">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="icons">
-                        <a href="#" class="fa fa-heart"></a>
-                        <a href="#" class="fa fa-share"></a>
-                        <a href="#" class="fa fa-eye"></a>
-                    </div>
-                    <div class="content">
-                        <img src="img/product4/5.jpg" alt="">
-                        <h3>Nike Shoes</h3>
-                        <div class="price">$200 <span>$150</span></div>
-                        <div class="stars">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="icons">
-                        <a href="#" class="fa fa-heart"></a>
-                        <a href="#" class="fa fa-share"></a>
-                        <a href="#" class="fa fa-eye"></a>
-                    </div>
-                    <div class="content">
-                        <img src="img/product4/7.png" alt="">
-                        <h3>Nike Shoes</h3>
-                        <div class="price">$200 <span>$150</span></div>
-                        <div class="stars">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="icons">
-                        <a href="#" class="fa fa-heart"></a>
-                        <a href="#" class="fa fa-share"></a>
-                        <a href="#" class="fa fa-eye"></a>
-                    </div>
-                    <div class="content">
-                        <img src="img/product4/8.png" alt="">
-                        <h3>Nike Shoes</h3>
-                        <div class="price">$200 <span>$150</span></div>
-                        <div class="stars">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </section>
         <!--end product-->
@@ -239,10 +138,13 @@
             <div class="row">
                 <div class="image-container">
                     <div class="small-image">
-                        <img src="img/product1/1.jpg" alt="" class="featured-image-1">
+                        @foreach ($bottom_product->svmany as $bottomp)
+                            <img src="{{ asset('storage/images/' . $bottomp->image) }}" alt="">
+                        @endforeach
+                        {{-- <img src="img/product1/1.jpg" alt="" class="featured-image-1">
                         <img src="img/product1/2.jpg" alt="" class="featured-image-1">
                         <img src="img/product1/3.jpg" alt="" class="featured-image-1">
-                        <img src="img/product1/4.jpg" alt="" class="featured-image-1">
+                        <img src="img/product1/4.jpg" alt="" class="featured-image-1"> --}}
                     </div>
                     <div class="big-image">
                         <img src="img/product1/1.jpg" alt="" class="big-image-1">
